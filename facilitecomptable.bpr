@@ -4,13 +4,16 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD\facilitecomptable.exe&quot;"/>
-    <OBJFILES value="BUILD\facilitecomptable.obj BUILD\principal.obj BUILD\connecteur.obj"/>
+    <OBJFILES value="..\developpementPersonnel\facilecomptable\BUILD\facilitecomptable.obj 
+      ..\developpementPersonnel\facilecomptable\BUILD\principal.obj 
+      ..\developpementPersonnel\facilecomptable\BUILD\connecteur.obj"/>
     <RESFILES value="facilitecomptable.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) principal.dfm connecteur.dfm"/>
-    <LIBFILES value=""/>
+    <LIBFILES value="&quot;C:\Program Files\Firebird\Firebird_1_5\lib\ib_util_ms.lib&quot; 
+      &quot;C:\Program Files\Firebird\Firebird_1_5\lib\fbclient_bor.lib&quot; &quot;C:\Program Files\Firebird\Firebird_1_5\lib\fbclient_ms.lib&quot;"/>
     <LIBRARIES value="rtl.lib vcl.lib"/>
     <SPARELIBS value="vcl.lib rtl.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
@@ -70,6 +73,9 @@
       <FILE FILENAME="facilitecomptable.cpp" FORMNAME="" UNITNAME="facilitecomptable" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="principal.cpp" FORMNAME="formPrincipal" UNITNAME="principal" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="connecteur.cpp" FORMNAME="connecteurDonnees" UNITNAME="connecteur" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files\Firebird\Firebird_1_5\lib\ib_util_ms.lib" FORMNAME="" UNITNAME="ib_util_ms.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files\Firebird\Firebird_1_5\lib\fbclient_bor.lib" FORMNAME="" UNITNAME="fbclient_bor.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files\Firebird\Firebird_1_5\lib\fbclient_ms.lib" FORMNAME="" UNITNAME="fbclient_ms.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
