@@ -35,7 +35,37 @@ object formPrincipal: TformPrincipal
     0000000000000000000000000000000000000000000000000000000000000000
     0000000000000000000000000000000000000000000000000000000000000000
     000000000000000000000000000000000000000000000000000000000000}
+  Menu = mainMenu
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
+  object mainMenu: TJvMainMenu
+    Style = msXP
+    ImageMargin.Left = 0
+    ImageMargin.Top = 0
+    ImageMargin.Right = 0
+    ImageMargin.Bottom = 0
+    ImageSize.Height = 0
+    ImageSize.Width = 0
+    Left = 128
+    Top = 64
+    object information: TMenuItem
+      Caption = '&Information'
+    end
+    object grandLivre: TMenuItem
+      Caption = '&Grand Livre'
+    end
+    object clients: TMenuItem
+      Caption = '&Clients'
+    end
+    object fournisseurs: TMenuItem
+      Caption = '&Fournisseurs'
+    end
+    object salaires: TMenuItem
+      Caption = '&Salaires'
+    end
+    object facturation: TMenuItem
+      Caption = 'F&acturation'
+    end
+  end
 end

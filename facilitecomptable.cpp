@@ -3,8 +3,8 @@
 #include <vcl.h>
 #pragma hdrstop
 //---------------------------------------------------------------------------
-USEFORM("principal.cpp", formPrincipal);
-USEFORM("connecteur.cpp", connecteurDonnees); /* TDataModule: File Type */
+USEFORM("main\principal.cpp", formPrincipal);
+USEFORM("data\connecteur.cpp", connecteurDonnees); /* TDataModule: File Type */
 //---------------------------------------------------------------------------
 WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {

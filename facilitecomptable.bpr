@@ -3,19 +3,17 @@
 <PROJECT>
   <MACROS>
     <VERSION value="BCB.06.00"/>
-    <PROJECT value="&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD\facilitecomptable.exe&quot;"/>
-    <OBJFILES value="..\developpementPersonnel\facilecomptable\BUILD\facilitecomptable.obj 
-      ..\developpementPersonnel\facilecomptable\BUILD\principal.obj 
-      ..\developpementPersonnel\facilecomptable\BUILD\connecteur.obj"/>
+    <PROJECT value="&quot;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build\facilitecomptable.exe&quot;"/>
+    <OBJFILES value="build\facilitecomptable.obj build\principal.obj build\connecteur.obj"/>
     <RESFILES value="facilitecomptable.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
-    <RESDEPEN value="$(RESFILES) principal.dfm connecteur.dfm"/>
-    <LIBFILES value="&quot;C:\Program Files\Firebird\Firebird_1_5\lib\ib_util_ms.lib&quot; 
-      &quot;C:\Program Files\Firebird\Firebird_1_5\lib\fbclient_bor.lib&quot; &quot;C:\Program Files\Firebird\Firebird_1_5\lib\fbclient_ms.lib&quot;"/>
-    <LIBRARIES value="rtl.lib vcl.lib"/>
-    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <RESDEPEN value="$(RESFILES) main\principal.dfm data\connecteur.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value="vcl.lib rtl.lib JvStdCtrlsC6R.lib JvSystemC6R.lib JvCoreC6R.lib CJcl.lib 
+      CJclVcl.lib vclx.lib"/>
     <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
       vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
       teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
@@ -31,7 +29,7 @@
       JvPageCompsC6R.bpi JvPluginC6R.bpi JvPrintPreviewC6R.bpi 
       JvTimeFrameworkC6R.bpi JvUIBC6R.bpi JvValidatorsC6R.bpi JvWizardC6R.bpi 
       JvXPCtrlsC6R.bpi ZCore.bpi ZParseSql.bpi ZPlain.bpi ZDbc.bpi ZComponent.bpi"/>
-    <PATHCPP value=".;"/>
+    <PATHCPP value=".;main;data"/>
     <PATHPAS value=".;"/>
     <PATHRC value=".;"/>
     <PATHASM value=".;"/>
@@ -39,31 +37,31 @@
     <RELEASELIBPATH value="$(BCB)\lib\release"/>
     <LINKER value="ilink32"/>
     <USERDEFINES value="_DEBUG"/>
-    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
     <MAINSOURCE value="facilitecomptable.cpp"/>
-    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <INCLUDEPATH value="data;main;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl;firebird"/>
+    <LIBPATH value="data;main;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;&quot;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\firebird&quot;"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
-      -I&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable&quot; 
-      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <IDLCFLAGS value="-Idata -Imain -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -Ifirebird -src_suffix cpp -D_DEBUG 
+      -boa"/>
     <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
       -tW -tWM"/>
-    <PFLAGS value="-N2&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD&quot; 
-      -N0&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD&quot; 
+    <PFLAGS value="-N2&quot;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build&quot; 
+      -N0&quot;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build&quot; 
       -$YD -$W -$O- -$A8 -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zd"/>
-    <LFLAGS value="-l&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD&quot; 
-      -I&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD&quot; 
+    <LFLAGS value="-l&quot;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build&quot; 
+      -I&quot;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build&quot; 
       -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
-    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
     <ALLRES value="$(RESFILES)"/>
     <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
     <OTHERFILES value=""/>
@@ -71,11 +69,8 @@
   <FILELIST>
       <FILE FILENAME="facilitecomptable.res" FORMNAME="" UNITNAME="facilitecomptable.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="facilitecomptable.cpp" FORMNAME="" UNITNAME="facilitecomptable" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="principal.cpp" FORMNAME="formPrincipal" UNITNAME="principal" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="connecteur.cpp" FORMNAME="connecteurDonnees" UNITNAME="connecteur" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
-      <FILE FILENAME="C:\Program Files\Firebird\Firebird_1_5\lib\ib_util_ms.lib" FORMNAME="" UNITNAME="ib_util_ms.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="C:\Program Files\Firebird\Firebird_1_5\lib\fbclient_bor.lib" FORMNAME="" UNITNAME="fbclient_bor.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="C:\Program Files\Firebird\Firebird_1_5\lib\fbclient_ms.lib" FORMNAME="" UNITNAME="fbclient_ms.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="main\principal.cpp" FORMNAME="formPrincipal" UNITNAME="principal" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="data\connecteur.cpp" FORMNAME="connecteurDonnees" UNITNAME="connecteur" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
@@ -83,11 +78,11 @@
   <IDEOPTIONS>
 [Version Info]
 IncludeVerInfo=1
-AutoIncBuild=0
+AutoIncBuild=1
 MajorVer=0
 MinorVer=1
 Release=0
-Build=0
+Build=1
 Debug=0
 PreRelease=0
 Special=0
@@ -99,7 +94,7 @@ CodePage=1252
 [Version Info Keys]
 CompanyName=PERCEVAL INFORMATIQUE
 FileDescription=
-FileVersion=0.1.0.0
+FileVersion=0.1.0.1
 InternalName=
 LegalCopyright=
 LegalTrademarks=
@@ -110,12 +105,19 @@ Comments=
 PrivateBuild=
 
 [HistoryLists\hlIncludePath]
-Count=1
-Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable;$(BCB)\include;$(BCB)\include\vcl
+Count=5
+Item0=data;main;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;firebird
+Item1=data;main;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item2=data;main;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\firebird
+Item3=data;main;C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable;$(BCB)\include;$(BCB)\include\vcl
+Item4=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable;$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
-Count=1
-Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Count=4
+Item0=data;main;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\firebird
+Item1=data;main;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\firebird;firebird
+Item2=data;main;C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
@@ -126,17 +128,21 @@ Count=1
 Item0=_DEBUG
 
 [HistoryLists\hlIntOutputDir]
-Count=1
-Item0=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD
-
-[HistoryLists\hlFinalOutputDir]
 Count=2
-Item0=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD\
+Item0=C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build
 Item1=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD
 
+[HistoryLists\hlFinalOutputDir]
+Count=4
+Item0=C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build\
+Item1=C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build
+Item2=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD\
+Item3=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD
+
 [HistoryLists\hIBPIOutputDir]
-Count=1
-Item0=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD
+Count=2
+Item0=C:\Documents and Settings\Eric Robert\Mes documents\facilicomptable\build
+Item1=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD
 
 [Debugging]
 DebugSourceDirs=$(BCB)\source\vcl

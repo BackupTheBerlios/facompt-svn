@@ -2,6 +2,6 @@ object connecteurDonnees: TconnecteurDonnees
   OldCreateOrder = False
   Left = 192
   Top = 114
-  Height = 150
-  Width = 215
+  Height = 249
+  Width = 296
 end
