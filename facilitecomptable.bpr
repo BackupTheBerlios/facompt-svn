@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD\facilitecomptable.exe&quot;"/>
+    <OBJFILES value="BUILD\facilitecomptable.obj BUILD\principal.obj BUILD\connecteur.obj"/>
+    <RESFILES value="facilitecomptable.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) principal.dfm connecteur.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi JvAppFrmC6R.bpi JvCoreC6R.bpi CJcl.bpi 
+      CJclVcl.bpi JvSystemC6R.bpi JvStdCtrlsC6R.bpi JvBandsC6R.bpi JvBDEC6R.bpi 
+      JvDlgsC6R.bpi JvDBC6R.bpi JvCtrlsC6R.bpi JvCmpC6R.bpi JvCryptC6R.bpi 
+      JvCustomC6R.bpi JvDockingC6R.bpi JvDotNetCtrlsC6R.bpi JvEDIC6R.bpi 
+      JvGlobusC6R.bpi JvHMIC6R.bpi JvInspectorC6R.bpi JvInterpreterC6R.bpi 
+      JvJansC6R.bpi JvManagedThreadsC6R.bpi JvMMC6R.bpi JvNetC6R.bpi 
+      JvPageCompsC6R.bpi JvPluginC6R.bpi JvPrintPreviewC6R.bpi 
+      JvTimeFrameworkC6R.bpi JvUIBC6R.bpi JvValidatorsC6R.bpi JvWizardC6R.bpi 
+      JvXPCtrlsC6R.bpi ZCore.bpi ZParseSql.bpi ZPlain.bpi ZDbc.bpi ZComponent.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="facilitecomptable.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-N2&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD&quot; 
+      -N0&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD&quot; 
+      -$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-l&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD&quot; 
+      -I&quot;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD&quot; 
+      -D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="facilitecomptable.res" FORMNAME="" UNITNAME="facilitecomptable.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="facilitecomptable.cpp" FORMNAME="" UNITNAME="facilitecomptable" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="principal.cpp" FORMNAME="formPrincipal" UNITNAME="principal" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="connecteur.cpp" FORMNAME="connecteurDonnees" UNITNAME="connecteur" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=0
+MinorVer=1
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=1
+DLL=0
+Locale=3084
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=PERCEVAL INFORMATIQUE
+FileDescription=
+FileVersion=0.1.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=Facilité comptable
+ProductVersion=1.0.0.0
+Comments=
+PrivateBuild=
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD\
+Item1=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=C:\Documents and Settings\Eric Robert\Mes documents\developpementPersonnel\facilecomptable\BUILD
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
